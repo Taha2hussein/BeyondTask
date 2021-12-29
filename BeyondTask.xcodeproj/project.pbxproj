@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0016E548277CAA8A00D8D844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E547277CAA8A00D8D844 /* AppDelegate.swift */; };
 		0016E54A277CAA8A00D8D844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E549277CAA8A00D8D844 /* SceneDelegate.swift */; };
-		0016E54C277CAA8A00D8D844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E54B277CAA8A00D8D844 /* ViewController.swift */; };
 		0016E54F277CAA8A00D8D844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0016E54D277CAA8A00D8D844 /* Main.storyboard */; };
 		0016E552277CAA8A00D8D844 /* BeyondTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0016E550277CAA8A00D8D844 /* BeyondTask.xcdatamodeld */; };
 		0016E554277CAA8F00D8D844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0016E553277CAA8F00D8D844 /* Assets.xcassets */; };
@@ -17,6 +16,20 @@
 		0016E562277CAA9000D8D844 /* BeyondTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E561277CAA9000D8D844 /* BeyondTaskTests.swift */; };
 		0016E56C277CAA9000D8D844 /* BeyondTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E56B277CAA9000D8D844 /* BeyondTaskUITests.swift */; };
 		0016E56E277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E56D277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift */; };
+		0016E73C277CADE000D8D844 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016E737277CAD8F00D8D844 /* GPUImage.framework */; };
+		0016E73E277CAE7600D8D844 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0016E737277CAD8F00D8D844 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0016E747277CAF8F00D8D844 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E746277CAF8F00D8D844 /* FilterViewController.swift */; };
+		0016E749277CAFAD00D8D844 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E748277CAFAD00D8D844 /* FilterViewModel.swift */; };
+		0016E74C277CB49400D8D844 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E74B277CB49400D8D844 /* UseCase.swift */; };
+		0016E751277CC16600D8D844 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E74E277CC16600D8D844 /* BaseViewController.swift */; };
+		0016E752277CC16600D8D844 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E74F277CC16600D8D844 /* CheckInternet.swift */; };
+		0016E753277CC16600D8D844 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E750277CC16600D8D844 /* KeyBoard.swift */; };
+		0016E758277CC28D00D8D844 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E756277CC28D00D8D844 /* Alert.swift */; };
+		0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */; };
+		0016E75D277CECE100D8D844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75C277CECE100D8D844 /* Constants.swift */; };
+		01A12F09AAE347487DEF4882 /* Pods_BeyondTask_BeyondTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C625434457107BDE25B7D2 /* Pods_BeyondTask_BeyondTaskUITests.framework */; };
+		8A2A5074C53E82C7AC489225 /* Pods_BeyondTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BB05B9281205D86372B39E /* Pods_BeyondTaskTests.framework */; };
+		AD55372FE1065F447CB1D994 /* Pods_BeyondTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01366499FB415369CDF3795 /* Pods_BeyondTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +47,46 @@
 			remoteGlobalIDString = 0016E543277CAA8A00D8D844;
 			remoteInfo = BeyondTask;
 		};
+		0016E736277CAD8F00D8D844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE0BE7C20D6DE610006E120;
+			remoteInfo = GPUImage_iOS;
+		};
+		0016E738277CAD8F00D8D844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE0BE8C20D6E2B80006E120;
+			remoteInfo = GPUImage_macOS;
+		};
+		0016E73A277CADBC00D8D844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE0BE7B20D6DE610006E120;
+			remoteInfo = GPUImage_iOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0016E73D277CAE2D00D8D844 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0016E73E277CAE7600D8D844 /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0016E544277CAA8A00D8D844 /* BeyondTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyondTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0016E547277CAA8A00D8D844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0016E549277CAA8A00D8D844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0016E54B277CAA8A00D8D844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0016E54E277CAA8A00D8D844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0016E551277CAA8A00D8D844 /* BeyondTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeyondTask.xcdatamodel; sourceTree = "<group>"; };
 		0016E553277CAA8F00D8D844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +97,25 @@
 		0016E567277CAA9000D8D844 /* BeyondTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeyondTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0016E56B277CAA9000D8D844 /* BeyondTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTaskUITests.swift; sourceTree = "<group>"; };
 		0016E56D277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage3-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+		0016E746277CAF8F00D8D844 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		0016E748277CAFAD00D8D844 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		0016E74B277CB49400D8D844 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		0016E74E277CC16600D8D844 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0016E74F277CC16600D8D844 /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		0016E750277CC16600D8D844 /* KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
+		0016E756277CC28D00D8D844 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		0016E75C277CECE100D8D844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		13C625434457107BDE25B7D2 /* Pods_BeyondTask_BeyondTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTask_BeyondTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4D8441378C1DC43552D450 /* Pods-BeyondTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-BeyondTaskTests/Pods-BeyondTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24BB05B9281205D86372B39E /* Pods_BeyondTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B079C9F978DD015A85D632E /* Pods-BeyondTask-BeyondTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTask-BeyondTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-BeyondTask-BeyondTaskUITests/Pods-BeyondTask-BeyondTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59EA7E726F410CD335A235FA /* Pods-BeyondTask-BeyondTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTask-BeyondTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-BeyondTask-BeyondTaskUITests/Pods-BeyondTask-BeyondTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72CA54EB3A61DDB66876EC5D /* Pods-BeyondTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTask.debug.xcconfig"; path = "Target Support Files/Pods-BeyondTask/Pods-BeyondTask.debug.xcconfig"; sourceTree = "<group>"; };
+		94DB8CF8FC0D74E5483A4DF7 /* Pods-BeyondTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTask.release.xcconfig"; path = "Target Support Files/Pods-BeyondTask/Pods-BeyondTask.release.xcconfig"; sourceTree = "<group>"; };
+		D01366499FB415369CDF3795 /* Pods_BeyondTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1CA2CC29CB15542AC1325B /* Pods-BeyondTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTaskTests.release.xcconfig"; path = "Target Support Files/Pods-BeyondTaskTests/Pods-BeyondTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0016E73C277CADE000D8D844 /* GPUImage.framework in Frameworks */,
+				AD55372FE1065F447CB1D994 /* Pods_BeyondTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2A5074C53E82C7AC489225 /* Pods_BeyondTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A12F09AAE347487DEF4882 /* Pods_BeyondTask_BeyondTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +154,8 @@
 				0016E560277CAA9000D8D844 /* BeyondTaskTests */,
 				0016E56A277CAA9000D8D844 /* BeyondTaskUITests */,
 				0016E545277CAA8A00D8D844 /* Products */,
+				5EC37F3DD52D4C5A5307D898 /* Pods */,
+				6EC432513DBF144F5594C81E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +172,13 @@
 		0016E546277CAA8A00D8D844 /* BeyondTask */ = {
 			isa = PBXGroup;
 			children = (
-				0016E547277CAA8A00D8D844 /* AppDelegate.swift */,
-				0016E549277CAA8A00D8D844 /* SceneDelegate.swift */,
-				0016E54B277CAA8A00D8D844 /* ViewController.swift */,
-				0016E54D277CAA8A00D8D844 /* Main.storyboard */,
-				0016E553277CAA8F00D8D844 /* Assets.xcassets */,
-				0016E555277CAA8F00D8D844 /* LaunchScreen.storyboard */,
+				0016E74D277CC16600D8D844 /* Utils */,
+				0016E74A277CB48800D8D844 /* Use Case */,
+				0016E741277CAF2600D8D844 /* Scens */,
+				0016E740277CAF1400D8D844 /* Resource */,
+				0016E73F277CAF0000D8D844 /* App Delegation */,
+				0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */,
 				0016E558277CAA8F00D8D844 /* Info.plist */,
-				0016E550277CAA8A00D8D844 /* BeyondTask.xcdatamodeld */,
 			);
 			path = BeyondTask;
 			sourceTree = "<group>";
@@ -130,6 +200,128 @@
 			path = BeyondTaskUITests;
 			sourceTree = "<group>";
 		};
+		0016E732277CAD8E00D8D844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0016E737277CAD8F00D8D844 /* GPUImage.framework */,
+				0016E739277CAD8F00D8D844 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0016E73F277CAF0000D8D844 /* App Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				0016E547277CAA8A00D8D844 /* AppDelegate.swift */,
+				0016E549277CAA8A00D8D844 /* SceneDelegate.swift */,
+			);
+			path = "App Delegation";
+			sourceTree = "<group>";
+		};
+		0016E740277CAF1400D8D844 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0016E553277CAA8F00D8D844 /* Assets.xcassets */,
+				0016E555277CAA8F00D8D844 /* LaunchScreen.storyboard */,
+				0016E550277CAA8A00D8D844 /* BeyondTask.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0016E741277CAF2600D8D844 /* Scens */ = {
+			isa = PBXGroup;
+			children = (
+				0016E742277CAF6200D8D844 /* Filter */,
+			);
+			path = Scens;
+			sourceTree = "<group>";
+		};
+		0016E742277CAF6200D8D844 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				0016E759277CCDD100D8D844 /* Cell */,
+				0016E745277CAF7400D8D844 /* View Model */,
+				0016E744277CAF6E00D8D844 /* View */,
+				0016E743277CAF6900D8D844 /* UI */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		0016E743277CAF6900D8D844 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0016E54D277CAA8A00D8D844 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0016E744277CAF6E00D8D844 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0016E746277CAF8F00D8D844 /* FilterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0016E745277CAF7400D8D844 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0016E748277CAFAD00D8D844 /* FilterViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0016E74A277CB48800D8D844 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				0016E74B277CB49400D8D844 /* UseCase.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		0016E74D277CC16600D8D844 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0016E74E277CC16600D8D844 /* BaseViewController.swift */,
+				0016E756277CC28D00D8D844 /* Alert.swift */,
+				0016E74F277CC16600D8D844 /* CheckInternet.swift */,
+				0016E750277CC16600D8D844 /* KeyBoard.swift */,
+				0016E75C277CECE100D8D844 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0016E759277CCDD100D8D844 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5EC37F3DD52D4C5A5307D898 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72CA54EB3A61DDB66876EC5D /* Pods-BeyondTask.debug.xcconfig */,
+				94DB8CF8FC0D74E5483A4DF7 /* Pods-BeyondTask.release.xcconfig */,
+				59EA7E726F410CD335A235FA /* Pods-BeyondTask-BeyondTaskUITests.debug.xcconfig */,
+				4B079C9F978DD015A85D632E /* Pods-BeyondTask-BeyondTaskUITests.release.xcconfig */,
+				1B4D8441378C1DC43552D450 /* Pods-BeyondTaskTests.debug.xcconfig */,
+				DD1CA2CC29CB15542AC1325B /* Pods-BeyondTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EC432513DBF144F5594C81E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D01366499FB415369CDF3795 /* Pods_BeyondTask.framework */,
+				13C625434457107BDE25B7D2 /* Pods_BeyondTask_BeyondTaskUITests.framework */,
+				24BB05B9281205D86372B39E /* Pods_BeyondTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,13 +329,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0016E571277CAA9000D8D844 /* Build configuration list for PBXNativeTarget "BeyondTask" */;
 			buildPhases = (
+				8E21E0CB1422AFBFED309900 /* [CP] Check Pods Manifest.lock */,
 				0016E540277CAA8A00D8D844 /* Sources */,
 				0016E541277CAA8A00D8D844 /* Frameworks */,
 				0016E542277CAA8A00D8D844 /* Resources */,
+				2EA51A4E352018F026821C6D /* [CP] Embed Pods Frameworks */,
+				0016E73D277CAE2D00D8D844 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0016E73B277CADBC00D8D844 /* PBXTargetDependency */,
 			);
 			name = BeyondTask;
 			productName = BeyondTask;
@@ -154,6 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0016E574277CAA9000D8D844 /* Build configuration list for PBXNativeTarget "BeyondTaskTests" */;
 			buildPhases = (
+				AB2B90ABCE7F54AC4286D9F9 /* [CP] Check Pods Manifest.lock */,
 				0016E559277CAA9000D8D844 /* Sources */,
 				0016E55A277CAA9000D8D844 /* Frameworks */,
 				0016E55B277CAA9000D8D844 /* Resources */,
@@ -172,9 +369,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0016E577277CAA9000D8D844 /* Build configuration list for PBXNativeTarget "BeyondTaskUITests" */;
 			buildPhases = (
+				9416F4C8B26A2CA2321E72F9 /* [CP] Check Pods Manifest.lock */,
 				0016E563277CAA9000D8D844 /* Sources */,
 				0016E564277CAA9000D8D844 /* Frameworks */,
 				0016E565277CAA9000D8D844 /* Resources */,
+				7453CE68C10F1A703287FE84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +419,12 @@
 			mainGroup = 0016E53B277CAA8A00D8D844;
 			productRefGroup = 0016E545277CAA8A00D8D844 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0016E732277CAD8E00D8D844 /* Products */;
+					ProjectRef = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0016E543277CAA8A00D8D844 /* BeyondTask */,
@@ -228,6 +433,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0016E737277CAD8F00D8D844 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 0016E736277CAD8F00D8D844 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0016E739277CAD8F00D8D844 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 0016E738277CAD8F00D8D844 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0016E542277CAA8A00D8D844 /* Resources */ = {
@@ -256,15 +478,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EA51A4E352018F026821C6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyondTask/Pods-BeyondTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyondTask/Pods-BeyondTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyondTask/Pods-BeyondTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7453CE68C10F1A703287FE84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyondTask-BeyondTaskUITests/Pods-BeyondTask-BeyondTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyondTask-BeyondTaskUITests/Pods-BeyondTask-BeyondTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyondTask-BeyondTaskUITests/Pods-BeyondTask-BeyondTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E21E0CB1422AFBFED309900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeyondTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9416F4C8B26A2CA2321E72F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeyondTask-BeyondTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2B90ABCE7F54AC4286D9F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeyondTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0016E540277CAA8A00D8D844 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0016E54C277CAA8A00D8D844 /* ViewController.swift in Sources */,
 				0016E548277CAA8A00D8D844 /* AppDelegate.swift in Sources */,
 				0016E54A277CAA8A00D8D844 /* SceneDelegate.swift in Sources */,
+				0016E749277CAFAD00D8D844 /* FilterViewModel.swift in Sources */,
+				0016E74C277CB49400D8D844 /* UseCase.swift in Sources */,
+				0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */,
+				0016E747277CAF8F00D8D844 /* FilterViewController.swift in Sources */,
+				0016E752277CC16600D8D844 /* CheckInternet.swift in Sources */,
+				0016E751277CC16600D8D844 /* BaseViewController.swift in Sources */,
 				0016E552277CAA8A00D8D844 /* BeyondTask.xcdatamodeld in Sources */,
+				0016E758277CC28D00D8D844 /* Alert.swift in Sources */,
+				0016E753277CC16600D8D844 /* KeyBoard.swift in Sources */,
+				0016E75D277CECE100D8D844 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +630,11 @@
 			isa = PBXTargetDependency;
 			target = 0016E543277CAA8A00D8D844 /* BeyondTask */;
 			targetProxy = 0016E568277CAA9000D8D844 /* PBXContainerItemProxy */;
+		};
+		0016E73B277CADBC00D8D844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 0016E73A277CADBC00D8D844 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,6 +776,7 @@
 		};
 		0016E572277CAA9000D8D844 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CA54EB3A61DDB66876EC5D /* Pods-BeyondTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +805,7 @@
 		};
 		0016E573277CAA9000D8D844 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94DB8CF8FC0D74E5483A4DF7 /* Pods-BeyondTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +834,7 @@
 		};
 		0016E575277CAA9000D8D844 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B4D8441378C1DC43552D450 /* Pods-BeyondTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +860,7 @@
 		};
 		0016E576277CAA9000D8D844 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1CA2CC29CB15542AC1325B /* Pods-BeyondTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +886,7 @@
 		};
 		0016E578277CAA9000D8D844 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EA7E726F410CD335A235FA /* Pods-BeyondTask-BeyondTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +910,7 @@
 		};
 		0016E579277CAA9000D8D844 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B079C9F978DD015A85D632E /* Pods-BeyondTask-BeyondTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

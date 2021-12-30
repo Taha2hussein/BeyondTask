@@ -9,7 +9,8 @@
 import UIKit
 import NVActivityIndicatorView
 import PKHUD
-class BaseViewController: CheckInternetViewController{
+
+class BaseViewController: CheckInternetViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

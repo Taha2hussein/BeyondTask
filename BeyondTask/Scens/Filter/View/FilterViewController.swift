@@ -13,24 +13,32 @@ import RxCocoa
 
 class FilterViewController: BaseViewController {
     
+    @IBOutlet weak var navigateBtn: UIButton!
     @IBOutlet weak var filterCollectionView: UICollectionView!
     @IBOutlet weak var testImage: UIImageView!
+    
     var FilterViewMode = FilterViewModel()
-   
+    private var router = FilterRouter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindToImageFilter(operation:EmbossFilter())
+        bindViewControllerRouter()
+        bindToImageFilter(operation: Filter().EmbossFilters)
         subscribeToImage()
         bindToCollectionView()
         filterSelected()
+        pushNextScreen()
     }
     
-
+    func bindViewControllerRouter(){
+        FilterViewMode.bind(view: self, router: router)
+    }
+   
     func bindToCollectionView() {
         FilterViewMode.FilterObjectsObservable
             .bind(to:self.filterCollectionView
                 .rx
-                .items(cellIdentifier: String(describing:FilterCollectionViewCell.self), cellType: FilterCollectionViewCell.self)) { row, data, cell in
+                .items(cellIdentifier: String(describing:FilterCollectionViewCell.self), cellType: FilterCollectionViewCell.self)) { _, data, cell in
             
             cell.config(filterName: data.FilterName)
         }.disposed(by: self.disposeBag)
@@ -45,6 +53,16 @@ class FilterViewController: BaseViewController {
         FilterViewMode.filterImage
             .bind(to: testImage.rx.image)
             .disposed(by: self.disposeBag)
+    }
+    
+    func pushNextScreen() {
+        navigateBtn.rx.tap.subscribe {[weak self] _ in
+            self?.showVideoViewController()
+        } .disposed(by: self.disposeBag)
+    }
+    
+    private func showVideoViewController() {
+        FilterViewMode.pushView()
     }
     
     func filterSelected() {
@@ -64,6 +82,7 @@ class FilterViewController: BaseViewController {
         } .disposed(by: self.disposeBag)
 
     }
+
 
 }
 

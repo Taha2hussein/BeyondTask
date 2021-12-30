@@ -27,6 +27,16 @@
 		0016E758277CC28D00D8D844 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E756277CC28D00D8D844 /* Alert.swift */; };
 		0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */; };
 		0016E75D277CECE100D8D844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75C277CECE100D8D844 /* Constants.swift */; };
+		0016E765277D07DC00D8D844 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E764277D07DC00D8D844 /* VideoViewModel.swift */; };
+		0016E767277D07EA00D8D844 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0016E766277D07EA00D8D844 /* Video.storyboard */; };
+		0016E769277D07F900D8D844 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E768277D07F900D8D844 /* VideoViewController.swift */; };
+		00F64CFE277D95E100625E99 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64CFD277D95E100625E99 /* VideoPicker.swift */; };
+		00F64D04277D9D4600625E99 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D02277D9D4600625E99 /* VideoRouter.swift */; };
+		00F64D07277D9EB600625E99 /* FilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D06277D9EB500625E99 /* FilterRouter.swift */; };
+		00F64D1A277DAC0000625E99 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D16277DAC0000625E99 /* ApplicationService.swift */; };
+		00F64D1B277DAC0000625E99 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D17277DAC0000625E99 /* ApplicationDelegate.swift */; };
+		00F64D1E277DC74000625E99 /* UIApplication+ScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D1D277DC74000625E99 /* UIApplication+ScreenShot.swift */; };
+		00F64D21277DDBCE00625E99 /* VideoPicker+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D20277DDBCE00625E99 /* VideoPicker+Filter.swift */; };
 		01A12F09AAE347487DEF4882 /* Pods_BeyondTask_BeyondTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C625434457107BDE25B7D2 /* Pods_BeyondTask_BeyondTaskUITests.framework */; };
 		8A2A5074C53E82C7AC489225 /* Pods_BeyondTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BB05B9281205D86372B39E /* Pods_BeyondTaskTests.framework */; };
 		AD55372FE1065F447CB1D994 /* Pods_BeyondTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01366499FB415369CDF3795 /* Pods_BeyondTask.framework */; };
@@ -107,6 +117,16 @@
 		0016E756277CC28D00D8D844 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		0016E75C277CECE100D8D844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0016E764277D07DC00D8D844 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		0016E766277D07EA00D8D844 /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		0016E768277D07F900D8D844 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		00F64CFD277D95E100625E99 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		00F64D02277D9D4600625E99 /* VideoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRouter.swift; sourceTree = "<group>"; };
+		00F64D06277D9EB500625E99 /* FilterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterRouter.swift; sourceTree = "<group>"; };
+		00F64D16277DAC0000625E99 /* ApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		00F64D17277DAC0000625E99 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+		00F64D1D277DC74000625E99 /* UIApplication+ScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+ScreenShot.swift"; sourceTree = "<group>"; };
+		00F64D20277DDBCE00625E99 /* VideoPicker+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPicker+Filter.swift"; sourceTree = "<group>"; };
 		13C625434457107BDE25B7D2 /* Pods_BeyondTask_BeyondTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTask_BeyondTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4D8441378C1DC43552D450 /* Pods-BeyondTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-BeyondTaskTests/Pods-BeyondTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24BB05B9281205D86372B39E /* Pods_BeyondTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +192,7 @@
 		0016E546277CAA8A00D8D844 /* BeyondTask */ = {
 			isa = PBXGroup;
 			children = (
+				00F64D14277DAC0000625E99 /* ApplicationServices */,
 				0016E74D277CC16600D8D844 /* Utils */,
 				0016E74A277CB48800D8D844 /* Use Case */,
 				0016E741277CAF2600D8D844 /* Scens */,
@@ -231,6 +252,7 @@
 		0016E741277CAF2600D8D844 /* Scens */ = {
 			isa = PBXGroup;
 			children = (
+				0016E75F277D07AB00D8D844 /* Video */,
 				0016E742277CAF6200D8D844 /* Filter */,
 			);
 			path = Scens;
@@ -239,6 +261,7 @@
 		0016E742277CAF6200D8D844 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				00F64D05277D9EB500625E99 /* Router */,
 				0016E759277CCDD100D8D844 /* Cell */,
 				0016E745277CAF7400D8D844 /* View Model */,
 				0016E744277CAF6E00D8D844 /* View */,
@@ -287,6 +310,9 @@
 				0016E74F277CC16600D8D844 /* CheckInternet.swift */,
 				0016E750277CC16600D8D844 /* KeyBoard.swift */,
 				0016E75C277CECE100D8D844 /* Constants.swift */,
+				00F64D1D277DC74000625E99 /* UIApplication+ScreenShot.swift */,
+				00F64CFD277D95E100625E99 /* VideoPicker.swift */,
+				00F64D20277DDBCE00625E99 /* VideoPicker+Filter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -297,6 +323,66 @@
 				0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0016E75F277D07AB00D8D844 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				00F64D01277D9D4600625E99 /* Router */,
+				0016E763277D07CC00D8D844 /* View Model */,
+				0016E762277D07BD00D8D844 /* UI */,
+				0016E761277D07B300D8D844 /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		0016E761277D07B300D8D844 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0016E768277D07F900D8D844 /* VideoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0016E762277D07BD00D8D844 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0016E766277D07EA00D8D844 /* Video.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0016E763277D07CC00D8D844 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0016E764277D07DC00D8D844 /* VideoViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		00F64D01277D9D4600625E99 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				00F64D02277D9D4600625E99 /* VideoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		00F64D05277D9EB500625E99 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				00F64D06277D9EB500625E99 /* FilterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		00F64D14277DAC0000625E99 /* ApplicationServices */ = {
+			isa = PBXGroup;
+			children = (
+				00F64D16277DAC0000625E99 /* ApplicationService.swift */,
+				00F64D17277DAC0000625E99 /* ApplicationDelegate.swift */,
+			);
+			path = ApplicationServices;
 			sourceTree = "<group>";
 		};
 		5EC37F3DD52D4C5A5307D898 /* Pods */ = {
@@ -333,8 +419,8 @@
 				0016E540277CAA8A00D8D844 /* Sources */,
 				0016E541277CAA8A00D8D844 /* Frameworks */,
 				0016E542277CAA8A00D8D844 /* Resources */,
-				2EA51A4E352018F026821C6D /* [CP] Embed Pods Frameworks */,
 				0016E73D277CAE2D00D8D844 /* CopyFiles */,
+				83E35024A60F41F90056D247 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,7 +459,7 @@
 				0016E563277CAA9000D8D844 /* Sources */,
 				0016E564277CAA9000D8D844 /* Frameworks */,
 				0016E565277CAA9000D8D844 /* Resources */,
-				7453CE68C10F1A703287FE84 /* [CP] Embed Pods Frameworks */,
+				84ACAE6A50A7DC0B03046245 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,6 +544,7 @@
 			files = (
 				0016E557277CAA8F00D8D844 /* LaunchScreen.storyboard in Resources */,
 				0016E554277CAA8F00D8D844 /* Assets.xcassets in Resources */,
+				0016E767277D07EA00D8D844 /* Video.storyboard in Resources */,
 				0016E54F277CAA8A00D8D844 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +566,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EA51A4E352018F026821C6D /* [CP] Embed Pods Frameworks */ = {
+		83E35024A60F41F90056D247 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,7 +583,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyondTask/Pods-BeyondTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7453CE68C10F1A703287FE84 /* [CP] Embed Pods Frameworks */ = {
+		84ACAE6A50A7DC0B03046245 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -590,11 +677,20 @@
 				0016E54A277CAA8A00D8D844 /* SceneDelegate.swift in Sources */,
 				0016E749277CAFAD00D8D844 /* FilterViewModel.swift in Sources */,
 				0016E74C277CB49400D8D844 /* UseCase.swift in Sources */,
+				00F64D1E277DC74000625E99 /* UIApplication+ScreenShot.swift in Sources */,
 				0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */,
+				00F64CFE277D95E100625E99 /* VideoPicker.swift in Sources */,
+				00F64D21277DDBCE00625E99 /* VideoPicker+Filter.swift in Sources */,
+				00F64D1B277DAC0000625E99 /* ApplicationDelegate.swift in Sources */,
 				0016E747277CAF8F00D8D844 /* FilterViewController.swift in Sources */,
 				0016E752277CC16600D8D844 /* CheckInternet.swift in Sources */,
+				00F64D04277D9D4600625E99 /* VideoRouter.swift in Sources */,
+				0016E765277D07DC00D8D844 /* VideoViewModel.swift in Sources */,
+				00F64D07277D9EB600625E99 /* FilterRouter.swift in Sources */,
+				0016E769277D07F900D8D844 /* VideoViewController.swift in Sources */,
 				0016E751277CC16600D8D844 /* BaseViewController.swift in Sources */,
 				0016E552277CAA8A00D8D844 /* BeyondTask.xcdatamodeld in Sources */,
+				00F64D1A277DAC0000625E99 /* ApplicationService.swift in Sources */,
 				0016E758277CC28D00D8D844 /* Alert.swift in Sources */,
 				0016E753277CC16600D8D844 /* KeyBoard.swift in Sources */,
 				0016E75D277CECE100D8D844 /* Constants.swift in Sources */,
@@ -785,6 +881,10 @@
 				DEVELOPMENT_TEAM = Y276977D9U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeyondTask/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow app to open Gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -814,6 +914,10 @@
 				DEVELOPMENT_TEAM = Y276977D9U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeyondTask/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "allow app to open Gallery";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow app to open Gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

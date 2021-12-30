@@ -8,15 +8,31 @@
 import UIKit
 import CoreData
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+  var window: UIWindow?
 
+  lazy var services: [ApplicationDelegate] = {
+    [ApplicationService()]
+  }()
+    
+func application(_ application: UIApplication,
+                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  
+  return services
+    .map { ($0.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true) }
+    .first { !$0 } ?? true
+}
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+func application(_ app: UIApplication,
+                 open url: URL,
+                 options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+
+  return services
+    .map { $0.application?(app, open: url, options: options) ?? false }
+    .first { $0 } ?? false
+}
 
     // MARK: UISceneSession Lifecycle
 

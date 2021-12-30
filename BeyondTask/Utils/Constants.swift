@@ -11,3 +11,13 @@ class Constant {
     var image = UIImage(named:"car")!
 
 }
+
+enum Storyboards: String {
+  case video = "Video"
+  case main = "Main"
+}
+
+enum ViewController: String{
+    case filterView = "FilterViewController"
+    case filterVideo = "VideoViewController"
+}

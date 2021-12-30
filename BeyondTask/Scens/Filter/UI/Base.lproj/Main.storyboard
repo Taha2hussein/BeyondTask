@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmE-Ku-EB2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -67,24 +67,54 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9m-IP-sIO">
+                                <rect key="frame" x="20" y="394" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GzD-uA-giV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Navigate to next screen"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aVd-k0-MgA" secondAttribute="trailing" constant="20" id="LAB-kS-etx"/>
+                            <constraint firstItem="j9m-IP-sIO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QU3-fD-7SD"/>
                             <constraint firstItem="Qjz-n9-K4y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wg6-je-Iru"/>
+                            <constraint firstItem="j9m-IP-sIO" firstAttribute="top" secondItem="Qjz-n9-K4y" secondAttribute="bottom" constant="50" id="WqU-se-RMD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qjz-n9-K4y" secondAttribute="trailing" id="YpR-S0-DIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9m-IP-sIO" secondAttribute="trailing" constant="20" id="a0u-NC-EXR"/>
                             <constraint firstItem="Qjz-n9-K4y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a1f-pH-aro"/>
                             <constraint firstItem="aVd-k0-MgA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jEo-uY-MG4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aVd-k0-MgA" secondAttribute="bottom" constant="10" id="qX6-Zs-vyI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dHd-Yc-wzE"/>
                     <connections>
                         <outlet property="filterCollectionView" destination="aVd-k0-MgA" id="gY5-z1-E95"/>
+                        <outlet property="navigateBtn" destination="j9m-IP-sIO" id="7uR-19-mSW"/>
                         <outlet property="testImage" destination="Qjz-n9-K4y" id="97G-hK-dTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="66.964285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4hD-oW-thm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="pmE-Ku-EB2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fG9-VX-Tkv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="93h-Zi-rU9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvf-Np-kvQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="66.964285714285708"/>
         </scene>

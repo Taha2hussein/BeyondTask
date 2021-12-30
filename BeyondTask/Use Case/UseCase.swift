@@ -12,3 +12,19 @@ import UIKit
 protocol SmoothFilter {
     func applyFilter( operation: BasicOperation)
 }
+
+protocol selectVideoProtocol {
+    func selectVideo()
+}
+
+protocol pushVideoFilter{
+    func pushView()
+}
+
+protocol ApplyFilter {
+    func applyFilter( operation: BasicOperation)
+}
+
+protocol BlueFilter {
+    func applyFilter(image:UIImage ,  operation: BasicOperation)
+}

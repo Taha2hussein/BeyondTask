@@ -12,33 +12,49 @@ import RxCocoa
 import GPUImage
 import UIKit
 
-class FilterViewModel: SmoothFilter{
+class FilterViewModel {
     
-     var filterImage = BehaviorRelay<UIImage>(value:UIImage())
+    private weak var view: FilterViewController?
+    private var router: FilterRouter?
+    var filterImage = BehaviorRelay<UIImage>(value:UIImage())
     private  let filter = Filter()
     private var FilterObjects = BehaviorRelay<[FullFilter]>(value: [])
     var FilterObjectsObservable : BehaviorRelay<[FullFilter]> {
         return FilterObjects
     }
     
+    func bind(view:FilterViewController, router:FilterRouter){
+        self.view = view
+        self.router = router
+        self.router?.setSourceView(view)
+    }
+    
     init() {
-       
+        
         let Filters = [FullFilter.init(FilterName: FilterName.emosss.rawValue, filter: filter.EmbossFilters) ,
                        FullFilter.init(FilterName: FilterName.Swirl.rawValue,
                                        filter: filter.SwirlDistortionFilter) ,
                        FullFilter.init(FilterName: FilterName.Polar.rawValue,
-                                         filter: filter.PolarPixellateFilters) ,
+                                       filter: filter.PolarPixellateFilters) ,
                        FullFilter.init(FilterName: FilterName.Half.rawValue,
-                                                    filter: filter.Halftoneilter)]
-
+                                       filter: filter.Halftoneilter)]
+        
         FilterObjects.accept(Filters)
     }
     
-    func applyFilter( operation: BasicOperation) {
+}
+extension FilterViewModel : ApplyFilter {
+    func applyFilter(operation: BasicOperation) {
         let filteredImage = Constant().image.filterWithOperation(operation)
         filterImage.accept(filteredImage)
     }
-   
+}
+
+extension FilterViewModel : pushVideoFilter {
+    func pushView() {
+        router?.navigateToVideoView()
+        
+    }
 }
 
 struct FullFilter {

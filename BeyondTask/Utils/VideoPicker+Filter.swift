@@ -12,18 +12,24 @@ import RxSwift
 import AVFoundation
 import AVKit
 import GPUImage
+import SwiftUI
+
 class VideoPicker_Filter: SelectedVideoViewController {
+    
+    var startPlayer = BehaviorRelay<Bool>(value: false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeerToTakeScreen()
+        timeerToTakeScreen(second:15)
     }
     
-    func timeerToTakeScreen() {
-        Observable<Int>.interval(.seconds(10), scheduler: MainScheduler.instance)
+    func timeerToTakeScreen(second:Int) {
+        Observable<Int>
+            .interval(.seconds(second),  scheduler: SerialDispatchQueueScheduler(qos: .background))
+            .observe(on: MainScheduler.instance)
             .subscribe(onNext: {[weak self] timer in
                 print(timer)
-                self?.takeScreen()
+                (self?.player.timeControlStatus == .playing) ? self?.takeScreen() : ()
             })
             .disposed(by: disposeBag)
     }
@@ -35,8 +41,7 @@ class VideoPicker_Filter: SelectedVideoViewController {
             if let cgImage = try? imageGenerator.copyCGImage(at: item.currentTime(), actualTime: nil) {
                 let image = UIImage(cgImage: cgImage)
                 let filter = SmoothToonFilter()
-                let filteredImage = image.filterWithOperation(filter)
-                writeImage(image:filteredImage)
+                self.applyFilter(image: image, operation: filter)
             }
         }
     }
@@ -52,4 +57,15 @@ class VideoPicker_Filter: SelectedVideoViewController {
             print("saved success!")
         }
     }
+}
+
+
+extension VideoPicker_Filter: BlueFilter {
+    func applyFilter(image: UIImage, operation: OperationGroup) {
+
+        let filteredImage = image.filterWithOperation(operation)
+        writeImage(image:filteredImage)
+    }
+    
+    
 }

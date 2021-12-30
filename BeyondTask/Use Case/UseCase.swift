@@ -26,5 +26,5 @@ protocol ApplyFilter {
 }
 
 protocol BlueFilter {
-    func applyFilter(image:UIImage ,  operation: BasicOperation)
+    func applyFilter(image:UIImage ,  operation: OperationGroup)
 }

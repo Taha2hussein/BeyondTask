@@ -235,6 +235,8 @@
 		002FCFD1277E308D0067F643 /* YUVToRGBConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FCEF9277E308C0067F643 /* YUVToRGBConversion.swift */; };
 		002FCFD2277E308D0067F643 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FCEFA277E308C0067F643 /* Texture.swift */; };
 		002FCFD3277E308D0067F643 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FCEFB277E308C0067F643 /* Color.swift */; };
+		002FCFE0277E33610067F643 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002FCF02277E308C0067F643 /* GPUImage.framework */; };
+		002FCFE1277E336D0067F643 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 002FCF02277E308C0067F643 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00F64CFE277D95E100625E99 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64CFD277D95E100625E99 /* VideoPicker.swift */; };
 		00F64D04277D9D4600625E99 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D02277D9D4600625E99 /* VideoRouter.swift */; };
 		00F64D07277D9EB600625E99 /* FilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D06277D9EB500625E99 /* FilterRouter.swift */; };
@@ -276,6 +278,13 @@
 			remoteGlobalIDString = BCE0BE8C20D6E2B80006E120;
 			remoteInfo = GPUImage_macOS;
 		};
+		002FCFDC277E335B0067F643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002FCEFC277E308C0067F643 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE0BE7B20D6DE610006E120;
+			remoteInfo = GPUImage_iOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -285,6 +294,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				002FCFE1277E336D0067F643 /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +560,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002FCFE0277E33610067F643 /* GPUImage.framework in Frameworks */,
 				AD55372FE1065F447CB1D994 /* Pods_BeyondTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1073,6 +1084,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				002FCFDD277E335B0067F643 /* PBXTargetDependency */,
 			);
 			name = BeyondTask;
 			productName = BeyondTask;
@@ -1580,6 +1592,11 @@
 			isa = PBXTargetDependency;
 			target = 0016E543277CAA8A00D8D844 /* BeyondTask */;
 			targetProxy = 0016E568277CAA9000D8D844 /* PBXContainerItemProxy */;
+		};
+		002FCFDD277E335B0067F643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 002FCFDC277E335B0067F643 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

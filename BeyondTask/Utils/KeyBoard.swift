@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxKeyboard
 import RxSwift
+
 class KeyboardViewController : UIViewController {
 
     let disposeBag = DisposeBag()
@@ -22,7 +23,7 @@ class KeyboardViewController : UIViewController {
 
         RxKeyboard.instance.visibleHeight.drive(onNext: { (height) in
             if withPush {
-                self.view.frame.origin.y = -1*height
+                self.view.frame.origin.y = -1 * height
             }
         }).disposed(by: disposeBag)
 

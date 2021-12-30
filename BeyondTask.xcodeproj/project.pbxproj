@@ -16,8 +16,6 @@
 		0016E562277CAA9000D8D844 /* BeyondTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E561277CAA9000D8D844 /* BeyondTaskTests.swift */; };
 		0016E56C277CAA9000D8D844 /* BeyondTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E56B277CAA9000D8D844 /* BeyondTaskUITests.swift */; };
 		0016E56E277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E56D277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift */; };
-		0016E73C277CADE000D8D844 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016E737277CAD8F00D8D844 /* GPUImage.framework */; };
-		0016E73E277CAE7600D8D844 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0016E737277CAD8F00D8D844 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0016E747277CAF8F00D8D844 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E746277CAF8F00D8D844 /* FilterViewController.swift */; };
 		0016E749277CAFAD00D8D844 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E748277CAFAD00D8D844 /* FilterViewModel.swift */; };
 		0016E74C277CB49400D8D844 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E74B277CB49400D8D844 /* UseCase.swift */; };
@@ -57,27 +55,6 @@
 			remoteGlobalIDString = 0016E543277CAA8A00D8D844;
 			remoteInfo = BeyondTask;
 		};
-		0016E736277CAD8F00D8D844 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCE0BE7C20D6DE610006E120;
-			remoteInfo = GPUImage_iOS;
-		};
-		0016E738277CAD8F00D8D844 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCE0BE8C20D6E2B80006E120;
-			remoteInfo = GPUImage_macOS;
-		};
-		0016E73A277CADBC00D8D844 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCE0BE7B20D6DE610006E120;
-			remoteInfo = GPUImage_iOS;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0016E73E277CAE7600D8D844 /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +83,6 @@
 		0016E567277CAA9000D8D844 /* BeyondTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeyondTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0016E56B277CAA9000D8D844 /* BeyondTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTaskUITests.swift; sourceTree = "<group>"; };
 		0016E56D277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage3-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
 		0016E746277CAF8F00D8D844 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		0016E748277CAFAD00D8D844 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		0016E74B277CB49400D8D844 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
@@ -143,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0016E73C277CADE000D8D844 /* GPUImage.framework in Frameworks */,
 				AD55372FE1065F447CB1D994 /* Pods_BeyondTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +172,6 @@
 				0016E741277CAF2600D8D844 /* Scens */,
 				0016E740277CAF1400D8D844 /* Resource */,
 				0016E73F277CAF0000D8D844 /* App Delegation */,
-				0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */,
 				0016E558277CAA8F00D8D844 /* Info.plist */,
 			);
 			path = BeyondTask;
@@ -219,15 +192,6 @@
 				0016E56D277CAA9000D8D844 /* BeyondTaskUITestsLaunchTests.swift */,
 			);
 			path = BeyondTaskUITests;
-			sourceTree = "<group>";
-		};
-		0016E732277CAD8E00D8D844 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0016E737277CAD8F00D8D844 /* GPUImage.framework */,
-				0016E739277CAD8F00D8D844 /* GPUImage.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0016E73F277CAF0000D8D844 /* App Delegation */ = {
@@ -425,7 +389,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0016E73B277CADBC00D8D844 /* PBXTargetDependency */,
 			);
 			name = BeyondTask;
 			productName = BeyondTask;
@@ -505,12 +468,6 @@
 			mainGroup = 0016E53B277CAA8A00D8D844;
 			productRefGroup = 0016E545277CAA8A00D8D844 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0016E732277CAD8E00D8D844 /* Products */;
-					ProjectRef = 0016E731277CAD8E00D8D844 /* GPUImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0016E543277CAA8A00D8D844 /* BeyondTask */,
@@ -519,23 +476,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0016E737277CAD8F00D8D844 /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 0016E736277CAD8F00D8D844 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0016E739277CAD8F00D8D844 /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 0016E738277CAD8F00D8D844 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0016E542277CAA8A00D8D844 /* Resources */ = {
@@ -726,11 +666,6 @@
 			isa = PBXTargetDependency;
 			target = 0016E543277CAA8A00D8D844 /* BeyondTask */;
 			targetProxy = 0016E568277CAA9000D8D844 /* PBXContainerItemProxy */;
-		};
-		0016E73B277CADBC00D8D844 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GPUImage_iOS;
-			targetProxy = 0016E73A277CADBC00D8D844 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

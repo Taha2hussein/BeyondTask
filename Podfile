@@ -22,5 +22,5 @@ target 'BeyondTask' do
   pod 'RxCocoa'
   pod 'RxReachability'
   pod 'RxKeyboard'
- 
+  pod 'cge', :git => 'https://github.com/wysaid/ios-gpuimage-plus.git'
 end

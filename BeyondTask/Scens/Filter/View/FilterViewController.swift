@@ -64,9 +64,24 @@ extension FilterViewController {
         Observable.zip(filterCollectionView
                         .rx
                         .itemSelected,filterCollectionView.rx.modelSelected(FullFilter.self)).bind { [weak self] selectedIndex, sclectedFilter in
-            self?.FilterViewMode.applyFilter(operation: sclectedFilter.filter)
+            self?.applyAfilter(index: selectedIndex.row)
         }
             .disposed(by: self.disposeBag)
+    }
+    
+    private func applyAfilter(index:Int){
+        if index == 0 {
+            self.FilterViewMode.applyFilter(operation: EmbossFilter())
+        }
+        else if index == 1 {
+            self.FilterViewMode.applyFilter(operation: SwirlDistortion())
+        }
+        else if index == 2 {
+            self.FilterViewMode.applyFilter(operation: PolarPixellate())
+        }
+        else if index == 3 {
+            self.FilterViewMode.applyFilter(operation: Halftone())
+        }
     }
     
 }

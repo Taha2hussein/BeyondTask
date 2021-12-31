@@ -11,7 +11,7 @@ import RxRelay
 import RxSwift
 import RxCocoa
 
-class FilterViewController: BaseViewController {
+class FilterViewController: BaseViewController  {
     
     @IBOutlet weak var navigateBtn: UIButton!
     @IBOutlet weak var filterCollectionView: UICollectionView!
@@ -22,6 +22,7 @@ class FilterViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUP()
         bindViewControllerRouter()
         bindToImageFilter(operation: Filter().EmbossFilters)
         subscribeToImage()
@@ -29,30 +30,9 @@ class FilterViewController: BaseViewController {
         filterSelected()
         pushNextScreen()
     }
-    
-    func bindViewControllerRouter(){
-        FilterViewMode.bind(view: self, router: router)
-    }
-   
-    func bindToCollectionView() {
-        FilterViewMode.FilterObjectsObservable
-            .bind(to:self.filterCollectionView
-                .rx
-                .items(cellIdentifier: String(describing:FilterCollectionViewCell.self), cellType: FilterCollectionViewCell.self)) { _, data, cell in
-            
-            cell.config(filterName: data.FilterName)
-        }.disposed(by: self.disposeBag)
-    }
-    
-    func bindToImageFilter(operation:BasicOperation) {
-        FilterViewMode.applyFilter( operation: operation)
-        
-    }
-    
-    func subscribeToImage() {
-        FilterViewMode.filterImage
-            .bind(to: testImage.rx.image)
-            .disposed(by: self.disposeBag)
+
+    func setUP() {
+        filterCollectionView.rx.setDelegate(self).disposed(by: self.disposeBag)
     }
     
     func pushNextScreen() {
@@ -64,27 +44,58 @@ class FilterViewController: BaseViewController {
     private func showVideoViewController() {
         FilterViewMode.pushView()
     }
+}
+
+// Collection view
+extension FilterViewController {
+    
+    func bindToCollectionView() {
+        FilterViewMode.FilterObjectsObservable
+            .bind(to:self.filterCollectionView
+                    .rx
+                    .items(cellIdentifier: String(describing:FilterCollectionViewCell.self), cellType: FilterCollectionViewCell.self)) { _, data, cell in
+                
+                cell.config(filterName: data.FilterName)
+            }.disposed(by: self.disposeBag)
+    }
     
     func filterSelected() {
         
-        self.filterCollectionView.rx.itemSelected.subscribe {[weak self] index in
-            if index.element?.row == 0 {
-                self?.FilterViewMode.applyFilter(operation: Filter().EmbossFilters)
-            }else if index.element?.row  == 1 {
-                self?.FilterViewMode.applyFilter(operation:  Filter().SwirlDistortionFilter)
-            }
-            else if index.element?.row  == 2 {
-                self?.FilterViewMode.applyFilter(operation:  Filter().PolarPixellateFilters)
-            }
-            else {
-                self?.FilterViewMode.applyFilter(operation:  Filter().Halftoneilter)
-            }
-        } .disposed(by: self.disposeBag)
-
+        Observable.zip(filterCollectionView
+                        .rx
+                        .itemSelected,filterCollectionView.rx.modelSelected(FullFilter.self)).bind { [weak self] selectedIndex, sclectedFilter in
+            self?.FilterViewMode.applyFilter(operation: sclectedFilter.filter)
+        }
+            .disposed(by: self.disposeBag)
     }
-
-
+    
 }
 
+extension FilterViewController : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           return CGSize(width: 100, height: 60)
+       }
+}
+
+// subcribers
 
 
+extension FilterViewController {
+    
+    func bindViewControllerRouter(){
+        FilterViewMode.bind(view: self, router: router)
+    }
+    
+    
+    
+    func bindToImageFilter(operation:BasicOperation) {
+        FilterViewMode.applyFilter( operation: operation)
+        
+    }
+    
+    func subscribeToImage() {
+        FilterViewMode.filterImage
+            .bind(to: testImage.rx.image)
+            .disposed(by: self.disposeBag)
+    }
+}

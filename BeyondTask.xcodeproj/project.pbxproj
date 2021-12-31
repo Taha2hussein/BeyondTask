@@ -23,7 +23,6 @@
 		0016E752277CC16600D8D844 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E74F277CC16600D8D844 /* CheckInternet.swift */; };
 		0016E753277CC16600D8D844 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E750277CC16600D8D844 /* KeyBoard.swift */; };
 		0016E758277CC28D00D8D844 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E756277CC28D00D8D844 /* Alert.swift */; };
-		0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */; };
 		0016E75D277CECE100D8D844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E75C277CECE100D8D844 /* Constants.swift */; };
 		0016E765277D07DC00D8D844 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016E764277D07DC00D8D844 /* VideoViewModel.swift */; };
 		0016E767277D07EA00D8D844 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0016E766277D07EA00D8D844 /* Video.storyboard */; };
@@ -237,6 +236,7 @@
 		002FCFD3277E308D0067F643 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FCEFB277E308C0067F643 /* Color.swift */; };
 		002FCFE0277E33610067F643 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002FCF02277E308C0067F643 /* GPUImage.framework */; };
 		002FCFE1277E336D0067F643 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 002FCF02277E308C0067F643 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0096EC99277F4F05008C923D /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0096EC98277F4F05008C923D /* FilterCollectionViewCell.swift */; };
 		00F64CFE277D95E100625E99 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64CFD277D95E100625E99 /* VideoPicker.swift */; };
 		00F64D04277D9D4600625E99 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D02277D9D4600625E99 /* VideoRouter.swift */; };
 		00F64D07277D9EB600625E99 /* FilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F64D06277D9EB500625E99 /* FilterRouter.swift */; };
@@ -321,7 +321,6 @@
 		0016E74F277CC16600D8D844 /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		0016E750277CC16600D8D844 /* KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
 		0016E756277CC28D00D8D844 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		0016E75C277CECE100D8D844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0016E764277D07DC00D8D844 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		0016E766277D07EA00D8D844 /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
@@ -537,6 +536,7 @@
 		002FCEFA277E308C0067F643 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 		002FCEFB277E308C0067F643 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		002FCEFC277E308C0067F643 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
+		0096EC98277F4F05008C923D /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		00F64CFD277D95E100625E99 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
 		00F64D02277D9D4600625E99 /* VideoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRouter.swift; sourceTree = "<group>"; };
 		00F64D06277D9EB500625E99 /* FilterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterRouter.swift; sourceTree = "<group>"; };
@@ -728,7 +728,7 @@
 		0016E759277CCDD100D8D844 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0016E75A277CCDE800D8D844 /* FilterCollectionViewCell.swift */,
+				0096EC98277F4F05008C923D /* FilterCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1411,7 +1411,6 @@
 				002FCFC4277E308D0067F643 /* Size.swift in Sources */,
 				002FCF2C277E308C0067F643 /* BrightnessAdjustment.metal in Sources */,
 				002FCF5D277E308C0067F643 /* AddBlend.metal in Sources */,
-				0016E75B277CCDE800D8D844 /* FilterCollectionViewCell.swift in Sources */,
 				00F64CFE277D95E100625E99 /* VideoPicker.swift in Sources */,
 				002FCFB2277E308D0067F643 /* DivideBlend.swift in Sources */,
 				002FCFA4277E308D0067F643 /* MotionBlur.metal in Sources */,
@@ -1540,6 +1539,7 @@
 				0016E75D277CECE100D8D844 /* Constants.swift in Sources */,
 				002FCF9A277E308D0067F643 /* FalseColor.metal in Sources */,
 				002FCF70277E308C0067F643 /* Luminance.metal in Sources */,
+				0096EC99277F4F05008C923D /* FilterCollectionViewCell.swift in Sources */,
 				002FCF7A277E308D0067F643 /* SwirlDistortion.metal in Sources */,
 				002FCF89277E308D0067F643 /* TiltShift.metal in Sources */,
 				002FCF34277E308C0067F643 /* OverlayBlend.metal in Sources */,

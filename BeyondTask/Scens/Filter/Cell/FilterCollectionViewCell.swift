@@ -2,16 +2,16 @@
 //  FilterCollectionViewCell.swift
 //  BeyondTask
 //
-//  Created by A on 29/12/2021.
+//  Created by A on 31/12/2021.
 //
 
 import UIKit
 
 class FilterCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var filterBtn: UIButton!
+    @IBOutlet weak var filterLabel: UILabel!
     
-    func config(filterName:String) {
-        self.filterBtn.setTitle(filterName, for: .normal)
+    func config(filterName: String) {
+        filterLabel.text = filterName
     }
 }
